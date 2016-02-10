@@ -17,6 +17,8 @@ from sentry.utils import json
 from sentry.utils.http import absolute_uri
 from sentry.plugins.bases.issue import IssuePlugin
 
+API_VERSION = 'v3'
+
 
 class OpenProjectOptionsForm(forms.Form):
     host = forms.URLField(
@@ -116,7 +118,7 @@ class OpenProjectPlugin(IssuePlugin):
         assignee = self.get_option('assignee_id', group.project)
 
         url = urlparse.urljoin(
-            host, '/api/v3/projects/%s/work_packages' % project)
+            host, '/api/%s/projects/%s/work_packages' % (API_VERSION, project))
         auth = base64.b64encode('apikey:%s' % apikey)
         headers = {
             'Authorization': 'Basic %s' % auth,
@@ -134,7 +136,7 @@ class OpenProjectPlugin(IssuePlugin):
         if assignee:
             payload['_links'].update({
                 'assignee': {
-                    'href': '/api/v3/users/%s' % assignee
+                    'href': '/api/%s/users/%s' % (API_VERSION, assignee)
                 }
             })
 
