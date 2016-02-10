@@ -11,7 +11,7 @@ Install
 
 Install the package via ``pip``::
 
-    pip install sentry_openproject
+    pip install sentry-openproject
 
 
 Configuration
