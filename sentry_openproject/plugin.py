@@ -66,7 +66,7 @@ class OpenProjectNewIssueForm(forms.Form):
 class OpenProjectPlugin(IssuePlugin):
     author = 'HBEE'
     author_url = 'https://github.com/HBEE/sentry-openproject'
-    version = '0.1.0'
+    version = '0.1.1'
     description = (
         'Integrate OpenProject issue tracking by linking a user account '
         'to a project.')
