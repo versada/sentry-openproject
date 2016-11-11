@@ -15,7 +15,6 @@ from setuptools import setup, find_packages
 tests_require = [
     'exam',
     'flake8>=2.0,<2.1',
-    'responses',
     'sentry>=8.9.0',
     'pytest-cov',
 ]
