@@ -25,7 +25,7 @@ install_requires = [
 
 setup(
     name='sentry-openproject',
-    version='0.1.1',
+    version='0.2.0',
     author='Naglis Jonaitis',
     author_email='naglis@hbee.eu',
     url='http://github.com/HBEE/sentry-openproject',
