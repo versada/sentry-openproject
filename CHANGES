@@ -1,0 +1,11 @@
+Version 0.2.0
+-------------
+
+- Uses the new issue plugin base class
+- Adds work package type
+- Loads available project assignees dynamically
+
+Version 0.1.1
+-------------
+
+- Initial release

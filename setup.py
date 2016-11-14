@@ -12,14 +12,20 @@ Sentry.
 """
 from setuptools import setup, find_packages
 
+tests_require = [
+    'exam',
+    'flake8>=2.0,<2.1',
+    'sentry>=8.9.0',
+    'pytest-cov',
+]
 
 install_requires = [
-    'sentry>=8.0.0',
+    'sentry>=8.9.0',
 ]
 
 setup(
     name='sentry-openproject',
-    version='0.1.1',
+    version='0.2.0',
     author='Naglis Jonaitis',
     author_email='naglis@hbee.eu',
     url='http://github.com/HBEE/sentry-openproject',
@@ -29,7 +35,7 @@ setup(
     packages=find_packages(exclude=['tests']),
     zip_safe=False,
     install_requires=install_requires,
-    test_suite='runtests.runtests',
+    extras_require={'tests': tests_require},
     include_package_data=True,
     entry_points={
         'sentry.apps': [
@@ -40,7 +46,6 @@ setup(
         ],
     },
     classifiers=[
-        'Framework :: Django',
         'Intended Audience :: Developers',
         'Intended Audience :: System Administrators',
         'License :: OSI Approved :: BSD License',
