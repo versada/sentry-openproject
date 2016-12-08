@@ -220,7 +220,7 @@ class OpenProjectPlugin(IssuePlugin2):
             self.raise_error(e)
 
         users = tuple(
-            (u['id'], '{firstName} {lastName}'.format(**u))
+            (u['id'], u['name'])
             for u in response.get('_embedded', {}).get('elements', [])
         )
 
