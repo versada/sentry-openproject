@@ -44,7 +44,7 @@ class OpenProjectPlugin(IssuePlugin2):
 
     author = 'HBEE'
     author_url = 'https://github.com/HBEE/sentry-openproject'
-    version = '0.2.0'
+    version = '0.2.1'
     resource_links = [
         ('Bug Tracker', 'https://github.com/HBEE/sentry-openproject/issues'),
         ('Source', 'https://github.com/HBEE/sentry-openproject'),
