@@ -26,7 +26,7 @@ install_requires = [
 
 setup(
     name='sentry-openproject',
-    version='0.2.1',
+    version='0.2.2',
     author='Naglis Jonaitis',
     author_email='naglis@versada.eu',
     url='http://github.com/versada/sentry-openproject',

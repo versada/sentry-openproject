@@ -45,7 +45,7 @@ class OpenProjectPlugin(IssuePlugin2):
 
     author = 'Versada'
     author_url = 'https://github.com/versada/sentry-openproject'
-    version = '0.2.1'
+    version = '0.2.2'
     resource_links = [
         (
             'Bug Tracker',
