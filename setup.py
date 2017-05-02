@@ -7,7 +7,8 @@ An extension for Sentry which integrates with OpenProject. Specifically, it
 allows you to easily create new issues on OpenProject from events within
 Sentry.
 
-:copyright: (c) 2016 by HBEE, see AUTHORS for more details.
+:copyright: (c) 2016 by HBEE,
+                2017 by Versada, see AUTHORS for more details.
 :license: BSD, see LICENSE for more details.
 """
 from setuptools import setup, find_packages
@@ -25,10 +26,10 @@ install_requires = [
 
 setup(
     name='sentry-openproject',
-    version='0.2.1',
+    version='0.2.2',
     author='Naglis Jonaitis',
-    author_email='naglis@hbee.eu',
-    url='http://github.com/HBEE/sentry-openproject',
+    author_email='naglis@versada.eu',
+    url='http://github.com/versada/sentry-openproject',
     description='A Sentry extension which integrates with OpenProject.',
     long_description=__doc__,
     license='BSD',
