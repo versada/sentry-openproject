@@ -3,7 +3,8 @@
 sentry_openproject.plugin
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:copyright: (c) 2016 by HBEE, see AUTHORS for more details.
+:copyright: (c) 2016 by HBEE,
+                2017 by Versada, see AUTHORS for more details.
 :license: BSD, see LICENSE for more details.
 """
 from __future__ import absolute_import, unicode_literals
@@ -42,12 +43,15 @@ class OpenProjectPlugin(IssuePlugin2):
     conf_title = title
     conf_key = 'openproject'
 
-    author = 'HBEE'
-    author_url = 'https://github.com/HBEE/sentry-openproject'
+    author = 'Versada'
+    author_url = 'https://github.com/versada/sentry-openproject'
     version = '0.2.1'
     resource_links = [
-        ('Bug Tracker', 'https://github.com/HBEE/sentry-openproject/issues'),
-        ('Source', 'https://github.com/HBEE/sentry-openproject'),
+        (
+            'Bug Tracker',
+            'https://github.com/versada/sentry-openproject/issues',
+        ),
+        ('Source', 'https://github.com/versada/sentry-openproject'),
     ]
 
     def get_group_urls(self):
@@ -92,7 +96,7 @@ class OpenProjectPlugin(IssuePlugin2):
             'label': 'OpenProject Project Slug',
             'default': self.get_option('project_slug', group.project),
             'type': 'text',
-            'readonly': True
+            'readonly': True,
         }] + fields + [
             {
                 'name': 'type',
@@ -108,7 +112,7 @@ class OpenProjectPlugin(IssuePlugin2):
                 'default': '',
                 'type': 'select',
                 'required': False,
-                'choices': self.get_allowed_assignees(request, group)
+                'choices': self.get_allowed_assignees(request, group),
             },
         ]
 
@@ -126,7 +130,7 @@ class OpenProjectPlugin(IssuePlugin2):
             'type': 'textarea',
             'help': ('Leave blank if you don\'t want to '
                      'add a comment to the OpenProject work package.'),
-            'required': False
+            'required': False,
         }]
 
     def get_issue_label(self, group, issue_id, **kwargs):

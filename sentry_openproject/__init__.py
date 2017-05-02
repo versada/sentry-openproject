@@ -3,7 +3,7 @@
 sentry_openproject
 ~~~~~~~~~~~~~~~~~~
 
-:copyright: (c) 2016 by Naglis Jonaitis, HBEE
+:copyright: (c) 2016 by HBEE, 2017 by Versada
 :license: BSD, see LICENSE for more details.
 """
 
