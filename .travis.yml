@@ -11,10 +11,19 @@ cache:
   - node_modules
   - $HOME/.cache/pip/wheels
   - $HOME/virtualenv/python2.7/src
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
 env:
   global:
   - PIP_DISABLE_PIP_VERSION_CHECK=on
+  - SENTRY_LIGHT_BUILD=1
   - SENTRY_SKIP_BACKEND_VALIDATION=1
+  - CXX=g++-4.8
+  - TRAVIS_NODE_VERSION=4
 install:
   - make install-tests
   - make lint
