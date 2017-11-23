@@ -4,8 +4,8 @@ sentry-openproject
 .. image:: https://img.shields.io/pypi/v/sentry-openproject.svg
     :target: https://pypi.python.org/pypi/sentry-openproject
 
-.. image:: https://img.shields.io/travis/versada/sentry-openproject.svg
-    :target: https://travis-ci.org/versada/sentry-openproject.svg
+.. image:: https://api.travis-ci.org/versada/sentry-openproject.svg
+    :target: https://travis-ci.org/versada/sentry-openproject
 
 .. image:: https://codecov.io/gh/versada/sentry-openproject/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/versada/sentry-openproject
